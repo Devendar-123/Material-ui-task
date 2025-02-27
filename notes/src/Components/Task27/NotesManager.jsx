@@ -35,12 +35,12 @@ const NotesManager = () => {
     setNotes(updatedNotes);
   };
 
-  const handlePinNote = (index) => {
-    const updatedNotes = [...notes];
-    const pinnedNote = updatedNotes.splice(index, 1)[0];
-    updatedNotes.unshift(pinnedNote); // Move to the top
-    setNotes(updatedNotes);
-  };
+  const handlePinNote = (index)=>{
+    const updateNotes = [...notes];
+    const pinnedNote = updateNotes.splice(index,1)[0];
+    updateNotes.unshift(pinnedNote);
+    setNotes(updateNotes);
+};
 
   return (
     <div style={{ padding: '20px' }}>
